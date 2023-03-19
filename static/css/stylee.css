@@ -1,0 +1,93 @@
+/* Background image */
+body {
+    background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Header styles */
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    margin-top: 3em;
+  }
+  
+  /* Task list styles */
+  ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  li {
+    font-size: 1.5em;
+    color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+  
+  /* Task input form styles */
+  form {
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  label {
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  input[type="text"] {
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    margin-left: 0.5em;
+  }
+  
+  button[type="submit"] {
+    background-color: #fff;
+    color: #333;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: none;
+    margin-left: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Logout link styles */
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+  
+  /* Animation styles */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - '5000:5000'
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: mysql+pymysql://root:Lina&mimi2706@db/mydatabase
+
+  db:
+    image: mysql:8
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: Lina&mimi2706
+    volumes:
+      -db-data:/var/lib/mysql
+
+volumes:
+  db-data:
+    drivers: local

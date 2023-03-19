@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form method="POST" action="/login">
+  <div class="panda">
+    <div class="ear"></div>
+    <div class="face">
+      <div class="eye-shade"></div>
+      <div class="eye-white">
+        <div class="eye-ball"></div>
+      </div>
+      <div class="eye-shade rgt"></div>
+      <div class="eye-white rgt">
+        <div class="eye-ball"></div>
+      </div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="body"> </div>
+    <div class="foot">
+      <div class="finger"></div>
+    </div>
+    <div class="foot rgt">
+      <div class="finger"></div>
+    </div>
+  </div>
+  <div class="hand"></div>
+  <div class="hand rgt"></div>
+  <h1>Login</h1>
+  <div class="form-group">
+    <input  name="username" required="required" class="form-control"/>
+    <label class="form-label">Username    </label>
+  </div>
+  <div class="form-group">
+    <input  name="password" type="password" required="required" class="form-control"/>
+    <label class="form-label">Password</label>
+  <div class="content">
+    <div class="checkbox">
+      <input type="checkbox" id="remember-me" />
+      <label for="remember-me">Remember me</label>
+    </div>
+  <div class="pass-link">
+      <a href="#">Forgot password?</a>
+    </div>
+  </div>
+    <button class="btn" onclick="">Log in </button>
+  </div>
+</form>
+
+</body>
+</html>
+
+
+

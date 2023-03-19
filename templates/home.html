@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/stylee.css') }}"/>
+
+    <title>My To-Do List</title>
+  </head>
+  <body>
+    <h1>My To-Do List</h1>
+    {% if tasks %}
+      <ul>
+        {% for task in tasks %}
+          <li>{{ task.task }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No tasks yet.</p>
+    {% endif %}
+    <form method="POST" action="/add">
+      <label for="task" >New task:</label>
+      <input type="text" name="task" required>
+      <button type="submit">Add task</button>
+    </form>
+    <a href="/logout">Log out</a>
+  </body>
+</html>
